@@ -17,9 +17,12 @@
             {{name}} has a message for you  : <br>
             Original msg: {{sayMessage()}} <br>
             Loves msg: {{sayLovesMessage()}} <br>
-            Loves msg: {{sayLovesMessage() | truth : 'loves' : 'hates'}} <br>
+            Truth: {{sayLovesMessage() | truth : 'loves' : 'hates'}} <br>
+            BIG TRUTH : {{sayLovesMessage() | truth : 'loves' | uppercase : 'hates'}} <br>
+            
             <div> 
                 <button ng-click="sadUjjwal()"> Sad Ujjwal</button>
+                <button ng-click="happyUjjwal()"> Happy Ujjwal</button>
                 <img ng-src="images/ujjwal_{{stateOfBeing}}.png">
                 
                 <br> Cost : {{cookieCost | currency}}

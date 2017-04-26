@@ -12,7 +12,6 @@
         $scope.stateOfBeing = "happy";
         $scope.cookieCost = .45;
         
-        
         $scope.sayMessage = function(){
             var msg = "Ujjwal likes to be happy.";
 
