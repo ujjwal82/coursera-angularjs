@@ -1,0 +1,18 @@
+
+
+digest cycle doesn't get triggered automaticall if the events are unaware of AngularJs, for that we need to call the $digest() explicitly.
+
+
+$scope.$digest()
+	is not recommended to call directly, reason if any exception occurs (where we are calling digest) will not be visible to the AngularJs. so to make that visible to angularJs we should use $apply(). By making the call to $apply the digest gets called by angularJs automatically.
+
+Lecture 16:
+===========
+
+2-way binding
+1-way binding
+1 time binding
+
+
+
+ 
